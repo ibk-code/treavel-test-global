@@ -1,0 +1,23 @@
+{
+  "name": "travel-test-global",
+  "version": "1.0.0",
+  "description": "",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel src/index.html src/about.html",
+    "build": "parcel build src/index.html src/about.html"
+  },
+  "author": "helooibk",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "parcel": "^2.0.1",
+    "postcss": "^8.3",
+    "postcss-custom-properties": "^12.0.0",
+    "postcss-import": "^14.0.2",
+    "postcss-url": "^10.1.3"
+  },
+  "dependencies": {
+    "precss": "^4.0.0"
+  }
+}

@@ -1,0 +1,467 @@
+.home-bg {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url('../../asset//img/travel-bg.jpg');
+  height: 700px;
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+  margin-top: -1rem;
+}
+
+.nav-link {
+  color: var(--gray200) !important;
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+  font-size: 1rem;
+}
+
+.auth-wrap {
+  display: flex;
+}
+
+.navbar {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 1.5rem;
+}
+
+.navbar-brand {
+  img {
+    height: 40px;
+  }
+}
+
+.heading-content {
+  margin-top: 2rem;
+  h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 4.8rem;
+    text-align: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: cover;
+    letter-spacing: -0.02em;
+    background-image: linear-gradient(
+      178deg,
+      rgb(227, 39, 100),
+      rgb(2, 133, 224)
+    );
+  }
+
+  .heading__info {
+    color: var(--gray200);
+    display: block;
+    text-align: center;
+    padding-top: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+}
+
+.book-flight {
+  margin-top: 1rem;
+  span {
+    font-size: 1.125rem;
+    color: var(--primaryWhite);
+  }
+}
+
+.trusted-brands {
+  background-color: var(--gray50);
+  margin-top: 5rem;
+  padding: 3rem 2rem 3rem 2rem;
+  border-radius: 16px;
+  &__heading {
+    color: var(--gray500);
+    text-align: center;
+    font-size: 1.2rem;
+    display: block;
+    font-weight: 300;
+  }
+}
+
+.brand-logos {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > div {
+    width: 20%;
+    padding: 1rem;
+  }
+}
+
+.process {
+  article {
+    margin-top: 8rem;
+    h2 {
+      color: #e32764;
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    span {
+      color: var(--gray900);
+      font-size: 2rem;
+      font-weight: 500;
+      display: block;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      color: var(--gray500);
+      font-size: 1.125rem;
+      font-weight: 300;
+    }
+  }
+}
+
+.steps-wrapper {
+  margin-top: 5rem;
+}
+
+.step-box {
+  position: relative;
+}
+
+.icon-box {
+  height: 50px;
+  width: 50px;
+  background-color: var(--lightPink);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 8px solid #ffffff;
+  position: absolute;
+  top: -18px;
+  left: 43%;
+}
+
+.content-box {
+  background-color: var(--gray50);
+  border-radius: 15px;
+  padding: 1.5rem 2rem;
+  min-height: 190px;
+
+  article {
+    h3 {
+      font-size: 1.25rem;
+      text-align: center;
+      color: var(--gray900);
+      padding-top: 1.125rem;
+      font-weight: 500;
+    }
+
+    p {
+      text-align: center;
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 20px;
+      color: var(--gray500);
+    }
+  }
+}
+
+.travel-agent {
+  margin-top: 7rem;
+  position: relative;
+}
+
+.travel-agent__img {
+  border-radius: 15px;
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.travel-detail-wrapper {
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+
+.travel-detail-box {
+  background-color: var(--primaryWhite);
+  border-radius: 10px;
+  padding: 2rem 3rem;
+}
+
+.travel-detail__space {
+  padding: 3rem 4rem;
+
+  article {
+    h2 {
+      font-weight: 500;
+      font-size: 2rem;
+    }
+
+    span {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      display: block;
+    }
+  }
+}
+
+.travel-detail-action {
+  display: flex;
+  gap: 12px;
+  margin-top: 3rem;
+}
+
+.uk-travel {
+  margin-top: 8rem;
+}
+
+.uk-travel-content {
+  padding-top: 10rem;
+
+  h2 {
+    font-size: 2.8rem;
+    color: var(--gray900);
+  }
+
+  p {
+    color: var(--gray500);
+    font-size: 1.2rem;
+  }
+}
+
+.travel-control {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 30px;
+}
+
+.travel-control-wrap {
+  border: 1px solid #e4e7ec;
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.travel-note {
+  background: linear-gradient(172.74deg, #e32764 -3.07%, #0285e0 196.05%);
+  border-radius: 15px;
+  padding: 2rem 1rem;
+  margin-top: 5rem;
+
+  p {
+    text-align: center;
+    color: var(--primaryWhite);
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 40px;
+  }
+}
+
+footer {
+  background-color: var(--gray800);
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 0;
+}
+
+.line-seperator {
+  height: 1px;
+  width: 100%;
+  background-color: var(--gray600);
+}
+
+.footer-detail {
+  display: flex;
+  margin-top: 1rem;
+  justify-content: space-between;
+
+  span {
+    color: var(--gray400);
+    display: block;
+    font-weight: 300;
+  }
+
+  .contact-info {
+    display: flex;
+    gap: 16px;
+  }
+}
+
+.travel-control__mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .heading-content {
+    h1 {
+      font-size: 3.8rem;
+    }
+  }
+
+  .content-box {
+    min-height: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-bg {
+    height: 600px;
+  }
+
+  .heading-content {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+
+  .brand-logos {
+    & > div {
+      width: 33.333%;
+    }
+  }
+
+  .uk-travel-content {
+    padding-top: 3rem;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .home-bg {
+    height: 650px;
+  }
+
+  .heading-content {
+    margin-bottom: 2rem;
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .brand-logos {
+    & > div {
+      width: 100%;
+    }
+  }
+
+  .step-box {
+    margin-bottom: 2rem;
+  }
+
+  .travel-detail-action {
+    display: block;
+    button {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+
+  footer {
+    margin-top: 6rem;
+  }
+
+  .footer-detail {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-info {
+    display: block !important;
+    span {
+      display: block;
+      text-align: center;
+      padding-top: 0.8rem;
+    }
+  }
+
+  .uk-travel-content + button {
+    width: 100%;
+    display: block;
+  }
+
+  .travel-control {
+    justify-content: center;
+  }
+
+  .travel-agent__img {
+    height: 370px;
+  }
+
+  .travel-note {
+    p {
+      font-size: 2.1rem;
+    }
+  }
+
+  .order-mobile {
+    order: 2;
+    margin-top: 2rem;
+  }
+
+  .travel-control__mobile {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .travel-control {
+    display: none;
+  }
+
+  .navbar-collapse {
+    position: fixed;
+    top: 53px;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    left: 0px;
+    padding: 2rem 1rem;
+    z-index: 2;
+    transition: all 0.2s ease 0s;
+
+    ul {
+      width: 100%;
+      display: flex;
+
+      li {
+        a {
+          color: var(--gray900) !important;
+        }
+      }
+    }
+
+    .nav-link {
+      color: var(--gray900);
+      font-size: 1.2rem;
+    }
+
+    .auth-wrap {
+      flex-direction: column;
+
+      .light-purple {
+        color: var(--primaryPink) !important;
+      }
+    }
+  }
+
+  .collapse:not(.show) {
+    display: none !important;
+  }
+
+  .content-box {
+    min-height: 150px;
+  }
+}

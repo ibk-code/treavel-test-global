@@ -1,0 +1,13 @@
+/* import from abstracts folder */
+@import './abstracts/variable.css';
+
+/* import from base folder */
+@import './base/base.css';
+@import './base/typography.css';
+
+/* import pages */
+@import './pages/home.css';
+@import './pages/about.css';
+
+/* import utils folder */
+@import './utlils/helper.css';

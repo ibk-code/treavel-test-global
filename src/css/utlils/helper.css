@@ -1,0 +1,60 @@
+.light-purple {
+  color: var(--lightPurple) !important;
+}
+
+.btn {
+  padding: 0.6rem 0.8rem !important;
+}
+
+.btn-pink {
+  background-color: var(--primaryPink);
+  color: var(--primaryWhite);
+  border-radius: 8px;
+  outline: none;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  &:hover {
+    color: var(--primaryWhite);
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  }
+}
+
+.btn-transparent {
+  background-color: transparent;
+  color: var(--gray700);
+  border-radius: 8px;
+  outline: none;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border: 1px solid #d0d5dd;
+  &:hover {
+    color: var(--gray700);
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  }
+}
+.spacing-wrap {
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+.form-control {
+  height: calc(1.5em + 0.75rem + 10px);
+}
+
+@media screen and (max-width: 768px) {
+  .spacing-wrap {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .spacing-wrap {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
