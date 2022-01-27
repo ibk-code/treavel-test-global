@@ -27,20 +27,26 @@
           <a class="navbar-brand" href="#">
             <img src="./asset/img/logo.png" alt="brand image" />
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          <div class="d-flex">
+            <a class="nav-link cart--wrapper d-block mr-3 cart-mobile" href="#">
+              <img src="./asset/img/cart.svg" alt="cart-img" />
+              <span class="cart--count">1</span>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav mr-auto ml-4">
               <li class="nav-item active">
                 <a class="nav-link" href="./index.html">Home</a>
               </li>
@@ -48,11 +54,23 @@
                 <a class="nav-link" href="./about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">Contact</a>
+                <a class="nav-link" href="./test-centers.html">Test Centers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">All COVID 19 Tests</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Contact Us</a>
+              </li>
+              <li class="cart-desktop">
+                <a class="nav-link cart--wrapper" href="#">
+                  <img src="./asset/img/cart.svg" alt="cart-img" />
+                  <span class="cart--count">1</span>
+                </a>
               </li>
             </ul>
             <div class="auth-wrap">
-              <a class="nav-link light-purple" href="#">Log in</a>
+              <a class="nav-link" href="#">Log in</a>
               <button class="btn btn-pink">Become an Agent</button>
             </div>
           </div>
@@ -66,9 +84,8 @@
             >Access Global travel updates . Get Tested for travel</span
           >
         </div>
-        <div class="row">
-          <div class="col-md-4"></div>
-          <div class="col-md-4">
+        <div class="row justify-content-center">
+          <div class="col-md-5">
             <form class="book-flight">
               <span>Choose the Country:</span>
               <div class="form-group">
@@ -81,7 +98,7 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <select class="form-control">
-                      <option value="" disabled selected>Depature</option>
+                      <option value="" disabled selected>Types of Tests</option>
                       <option value="Nigeria">Nigeria</option>
                     </select>
                   </div>
@@ -89,13 +106,26 @@
                 <div class="col-md-6">
                   <div class="form-group">
                     <select class="form-control">
-                      <option value="" disabled selected>Walk-in</option>
+                      <option value="" disabled selected>Place of Test</option>
                       <option value="Nigeria">Nigeria</option>
                     </select>
                   </div>
                 </div>
               </div>
-              <button class="btn btn-pink w-100">Book your Tests</button>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <button class="btn btn-pink w-100">Book your Tests</button>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <button class="btn btn-purple w-100">
+                      Get Country Updates
+                    </button>
+                  </div>
+                </div>
+              </div>
             </form>
           </div>
         </div>
@@ -166,8 +196,17 @@
         <div class="row">
           <div class="step-box col-md-4">
             <div class="step-box">
-              <div class="icon-box">
-                <img src="./asset/img/zap.svg" alt="Zap icon" />
+              <div class="icon-image">
+                <img
+                  src="./asset/img/1.svg"
+                  class="img-fluid"
+                  alt="First image"
+                />
+                <img
+                  src="./asset/img/search.svg"
+                  class="img-fluid process-img"
+                  alt="Search icon"
+                />
               </div>
               <div class="content-box">
                 <article>
@@ -182,8 +221,17 @@
           </div>
           <div class="step-box col-md-4">
             <div class="step-box">
-              <div class="icon-box">
-                <img src="./asset/img/zap.svg" alt="Zap icon" />
+              <div class="icon-image">
+                <img
+                  src="./asset/img/2.svg"
+                  class="img-fluid"
+                  alt="second icon"
+                />
+                <img
+                  src="./asset/img/annotation.svg"
+                  class="img-fluid process-img"
+                  alt="Annotation icon"
+                />
               </div>
               <div class="content-box">
                 <article>
@@ -198,8 +246,17 @@
           </div>
           <div class="step-box col-md-4">
             <div class="step-box">
-              <div class="icon-box">
-                <img src="./asset/img/zap.svg" alt="Zap icon" />
+              <div class="icon-image">
+                <img
+                  src="./asset/img/3.svg"
+                  class="img-fluid"
+                  alt="second icon"
+                />
+                <img
+                  src="./asset/img/picker.svg"
+                  class="img-fluid process-img"
+                  alt="Annotation icon"
+                />
               </div>
               <div class="content-box">
                 <article>
@@ -267,10 +324,18 @@
             <button class="btn btn-pink w-100-sm">Learn More</button>
             <div class="travel-control">
               <div class="travel-control-wrap">
-                <img src="./asset//img/left.svg" alt="Left control" />
+                <img
+                  src="./asset//img/left.svg"
+                  class="img-fluid"
+                  alt="Left control"
+                />
               </div>
               <div class="travel-control-wrap">
-                <img src="./asset//img/right.svg" alt="Left control" />
+                <img
+                  src="./asset//img/right.svg"
+                  class="img-fluid"
+                  alt="Left control"
+                />
               </div>
             </div>
           </div>

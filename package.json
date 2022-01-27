@@ -4,8 +4,8 @@
   "description": "",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel src/index.html src/about.html",
-    "build": "parcel build src/index.html src/about.html"
+    "start": "parcel src/index.html src/about.html src/test-centers.html",
+    "build": "parcel build src/index.html src/about.html src/test-centers.html"
   },
   "author": "helooibk",
   "license": "ISC",

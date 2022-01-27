@@ -8,6 +8,7 @@
 /* import pages */
 @import './pages/home.css';
 @import './pages/about.css';
+@import './pages/test-centers.css';
 
 /* import utils folder */
 @import './utlils/helper.css';
