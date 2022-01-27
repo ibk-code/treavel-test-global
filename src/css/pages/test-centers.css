@@ -1,7 +1,11 @@
 .test-center-bg {
-  background-image: linear-gradient(184deg, #e327643b 12.89%, #0285e054 92.39%),
-    linear-gradient(1deg, rgb(0 0 0 / 55%), rgb(0 0 0 / 62%)),
-    url('../../asset//img/test-center-bg.png');
+  background-image: linear-gradient(
+      184deg,
+      rgb(97 91 93 / 23%) 12.89%,
+      rgba(2, 133, 224, 0.32941) 92.39%
+    ),
+    linear-gradient(1deg, rgb(0 0 0 / 2%), rgb(0 0 0 / 5%)),
+    url('../../asset/img/test-center-bg.png');
   height: 400px;
   background-position: center;
   background-size: cover;
@@ -33,4 +37,19 @@
 
 .postal-img {
   margin-top: -10rem;
+}
+
+/* ---------- media screen for ipad  ------------ */
+@media screen and (max-width: 768px) {
+  .upper-spacing {
+    margin-top: 3rem;
+  }
+
+  .postal-img {
+    margin-top: 2rem;
+  }
+
+  .reverse-column {
+    flex-direction: column-reverse;
+  }
 }

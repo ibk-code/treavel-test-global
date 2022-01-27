@@ -9,6 +9,8 @@
 @import './pages/home.css';
 @import './pages/about.css';
 @import './pages/test-centers.css';
+@import './pages/covid-test.css';
+@import './pages/cart.css';
 
 /* import utils folder */
 @import './utlils/helper.css';
