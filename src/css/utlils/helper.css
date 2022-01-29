@@ -130,9 +130,10 @@
 
 .input-error {
   display: block;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   color: var(--primaryPink);
   font-weight: 300;
+  font-size: 0.8rem;
 }
 
 @media screen and (max-width: 768px) {
