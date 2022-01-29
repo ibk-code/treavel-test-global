@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Travel Tests Global</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Covid flight test verification system" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Loaded font from google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap css cdn helper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="cart-bg">
+      <div class="container-fluid spacing-wrap">
+        <nav class="navbar navbar-expand-md navbar-dark">
+          <a class="navbar-brand" href="#">
+            <img src="./asset/img/logo.png" alt="brand image" />
+          </a>
+          <div class="d-flex">
+            <a class="nav-link cart--wrapper d-block mr-3 cart-mobile" href="#">
+              <img src="./asset/img/cart.svg" alt="cart-img" />
+              <span class="cart--count">1</span>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ml-4">
+              <li class="nav-item active">
+                <a class="nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./test-centers.html">Test Centers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./covid-test.html"
+                  >All COVID 19 Tests</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Contact Us</a>
+              </li>
+              <li class="cart-desktop">
+                <a class="nav-link cart--wrapper" href="./cart.html">
+                  <img src="./asset/img/cart.svg" alt="cart-img" />
+                  <span class="cart--count">1</span>
+                </a>
+              </li>
+            </ul>
+            <div class="auth-wrap">
+              <a class="nav-link" href="#">Log in</a>
+              <button class="btn btn-pink">Become an Agent</button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- ---------- booking form details ---------- -->
+      <section class="container-fluid spacing-wrap section-space">
+        <div class="booking-wrapper">
+          <h2>Fill the Booking form Below</h2>
+          <button class="btn btn-sm btn-dark mt-4">
+            Fit to fly PCR test Inbound Nigeria
+          </button>
+
+          <!-- ---------- Booking form ---------- -->
+          <form class="mt-4 booking-form">
+            <div class="row mb-5">
+              <div class="col-md-6">
+                <div>
+                  <label for="first-name" class="required">First Name</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="first-name"
+                    required
+                  />
+                </div>
+              </div>
+              <!-- <div class="col-md-1"></div> -->
+              <div class="col-md-6">
+                <div>
+                  <label for="last-name" class="required">Last Name</label>
+                  <input
+                    class="form-control"
+                    type="text"
+                    id="last-name"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="mb-5">
+              <label class="required" for="email">Contact Email</label>
+              <input type="email" id="email" class="form-control" />
+              <span class="input-error"
+                >Please provide only ONE email address
+              </span>
+            </div>
+            <div class="mb-5">
+              <label class="required" for="confirm-email">Confirm Email</label>
+              <input type="email" id="confirm-email" class="form-control" />
+            </div>
+            <div class="mb-5">
+              <label class="required" for="phone">Confirm Email</label>
+              <div class="input-group mb-2 mr-sm-2">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">+44</div>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="phone"
+                  placeholder="Phone No"
+                />
+              </div>
+              <span class="input-error">
+                Please indicate your international dailing country code and then
+                enter the rest of the number
+              </span>
+            </div>
+            <div class="row mb-5">
+              <div class="col-md-6">
+                <div>
+                  <label for="sex" class="required">Sex</label>
+                  <select class="form-control" id="sex" required></select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div>
+                  <label for="dob" class="required">Date of Birth</label>
+                  <input
+                    class="form-control"
+                    type="date"
+                    placeholder="Date of Birth"
+                    id="dob"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="mb-5">
+              <label for="ethnicity" class="required">Ethnicity</label>
+              <select class="form-control" id="ethnicity" required></select>
+            </div>
+            <div class="row mb-5">
+              <div class="col-md-6">
+                <div>
+                  <label for="isolation-country" class="required"
+                    >Isolation Country</label
+                  >
+                  <select
+                    class="form-control"
+                    id="isolation-country"
+                    required
+                  ></select>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div>
+                  <label for="isolation-address-1" class="required"
+                    >Isolation Address 1</label
+                  >
+                  <select
+                    class="form-control"
+                    id="isolation-address-1"
+                    required
+                  ></select>
+                </div>
+                <span class="input-error">
+                  This is the address where you will be during isolation
+                </span>
+              </div>
+            </div>
+            <div class="row mb-5">
+              <div class="col-md-6">
+                <div>
+                  <label for="isolation-address-2" class="required"
+                    >Isolation Address 2</label
+                  >
+                  <select
+                    class="form-control"
+                    id="isolation-address-2"
+                    required
+                  ></select>
+                </div>
+                <span class="input-error">
+                  This is the address where you will be during isolation
+                </span>
+              </div>
+              <div class="col-md-6">
+                <div>
+                  <label for="isolation-city" class="required"
+                    >Isolation City/State</label
+                  >
+                  <input class="form-control" type="text" id="isolation-city" />
+                </div>
+              </div>
+            </div>
+            <div class="row mb-5">
+              <div class="col-md-6">
+                <div>
+                  <label for="isolation-postcode" class="required"
+                    >Isolation Postcode</label
+                  >
+                  <select
+                    class="form-control"
+                    id="isolation-postcode"
+                    required
+                  ></select>
+                </div>
+                <span class="input-error">
+                  Your sampling package will be posted here, kindly ensure you
+                  put in the correct post code
+                </span>
+              </div>
+              <div class="col-md-6">
+                <div>
+                  <label for="country-form" class="required"
+                    >Country Travelled From
+                  </label>
+                  <select
+                    class="form-control"
+                    id="country-form"
+                    required
+                  ></select>
+                </div>
+                <span class="input-error">
+                  Please indicate the country/territory where you are travelling
+                  from
+                </span>
+              </div>
+            </div>
+            <div class="row mb-5">
+              <div class="col-md-6">
+                <div>
+                  <label for="depature-date" class="required"
+                    >Departure Date</label
+                  >
+                  <input
+                    class="form-control"
+                    id="depature-date"
+                    required
+                    type="date"
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div>
+                  <label for="arrival-date" class="required"
+                    >Arrival Date</label
+                  >
+                  <input
+                    class="form-control"
+                    id="arrival-date"
+                    required
+                    type="date"
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <!-- ----------- Payment Method --------- -->
+          <h2>Select a Payment Method</h2>
+          <span class="text-grey900 block">
+            Kindly choose your payment method</span
+          >
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <div class="payment-box">
+                <img
+                  src="./asset/img/voucher.svg"
+                  alt="Voucher payment method"
+                />
+                <span>Pay with <b>Voucher</b></span>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="payment-box">
+                <img
+                  src="./asset/img/paystack.svg"
+                  alt="Voucher payment method"
+                />
+                <span>Pay with <b>Paystack</b></span>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="payment-box">
+                <img
+                  src="./asset/img/smartpay.svg"
+                  alt="Voucher payment method"
+                />
+                <span>Pay with <b>SmartPay</b></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- ---------- Attestation section --------- -->
+          <span class="text900 d-block mt-5 mb-4"
+            >I understand that I am purchasing this service in line with the
+            Government's travel requirements because</span
+          >
+          <div>
+            <input
+              type="radio"
+              id="fully-vaccinated"
+              name="vaccinated-status"
+            />
+            <label for="fully-vaccinated" class="font-weight-light">
+              I am fully vaccinated
+            </label>
+          </div>
+          <div>
+            <input type="radio" id="show-vaccinated" name="vaccinated-status" />
+            <label for="show-vaccinated" class="font-weight-light">
+              I am fully vaccinated but unable to show evidence of this
+            </label>
+          </div>
+          <div>
+            <input type="radio" id="not-vaccinated" name="vaccinated-status" />
+            <label for="not-vaccinated" class="font-weight-light">
+              I am not fully vaccinated
+            </label>
+          </div>
+          <span class="text900 d-block mt-4"
+            >I understand that this service I am about to purchase is non
+            refundable and I am about to purchase it of my own free will.</span
+          >
+
+          <span class="font-weight-bold mt-3 d-block mb-3"
+            >Consent to Test <span class="text-pink">*</span></span
+          >
+          <div>
+            <input type="checkbox" id="consent-form" name="consent-form" />
+            <label for="consent-form" class="font-weight-light">
+              I consent to this test being done, or if this test is for a child,
+              I confirm I am a legal guardian of the child and consent to this
+              test being done.
+            </label>
+          </div>
+          <div>
+            <input type="checkbox" id="condition-form" name="condition-form" />
+            <label for="condition-form" class="font-weight-light">
+              By submitting the form, I consent to the terms and conditions of
+              purchasing this product.
+            </label>
+          </div>
+          <span class="mt-1 mb-5 text-pink d-block font-weight-light"
+            >Bookings can’t be cancelled or refunded</span
+          >
+          <button class="btn btn-sm btn-pink mx-auto d-block mt-5">
+            Book a Test
+          </button>
+        </div>
+      </section>
+      <footer>
+        <div class="container-fluid spacing-wrap">
+          <div class="line-seperator"></div>
+          <div class="footer-detail">
+            <span>© 2021 Traveltestsltd.</span>
+            <div class="contact-info">
+              <span>info@traveltestsltd.com</span>
+              <span>+447436875938</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
