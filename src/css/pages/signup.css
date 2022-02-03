@@ -1,0 +1,126 @@
+.signup-wrapper {
+  display: flex;
+
+  & > div {
+    width: 50%;
+  }
+}
+
+.signup-spacing {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.signup-desc {
+  background-image: url(../../asset/img/signup.png);
+  height: 100vh;
+  overflow-y: hidden;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+
+  &--content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    font-size: 2rem;
+    color: var(--primaryWhite);
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: justify;
+    transform: translateY(50vh);
+  }
+}
+
+.signup-form-wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  & > img {
+    height: 150px;
+  }
+
+  input,
+  select {
+    border: 2px solid #667085;
+  }
+
+  input[type='radio'] {
+    accent-color: var(--primaryPink);
+  }
+
+  input[type='checkbox'] {
+    accent-color: var(--primaryPink);
+  }
+}
+
+.form-header {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  &--heading {
+    display: block;
+    color: var(--gray900);
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  &--content {
+    font-weight: 300;
+  }
+}
+
+.remove-border-right {
+  border-right: none !important;
+}
+
+.remove-border-left {
+  border-left: none !important;
+}
+
+.file-select {
+  height: calc(1.5em + 0.75rem + 10px);
+  display: flex;
+  gap: 20px;
+  border: 2px solid #667085;
+  border-radius: 0.25rem;
+  align-items: center;
+  padding: 1.5rem 1rem;
+}
+
+.file-name {
+  color: #999fac;
+}
+
+.pass-img {
+  width: 50px;
+}
+
+@media screen and (max-width: 428px) {
+  .signup-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    & > div {
+      width: 100%;
+    }
+  }
+
+  .signup-desc {
+    height: 60vh;
+
+    &--content {
+      transform: translateY(30vh);
+    }
+  }
+
+  .signup-form-wrapper {
+    height: auto;
+    .row {
+      & > div:nth-child(1) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

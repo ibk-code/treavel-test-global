@@ -4,8 +4,8 @@
   "description": "",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel src/index.html src/about.html src/test-centers.html src/cart.html src/booking.html",
-    "build": "parcel build src/index.html src/about.html src/test-centers.html src/covid-test.html src/cart.html src/booking.html"
+    "start": "parcel src/index.html src/about.html src/test-centers.html src/cart.html src/booking.html src/signup.html src/login.html",
+    "build": "parcel build src/index.html src/about.html src/test-centers.html src/covid-test.html src/cart.html src/booking.html src/signup.html src/login.html"
   },
   "author": "helooibk",
   "license": "ISC",

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Travel Tests Global</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Covid flight test verification system" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Loaded font from google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap css cdn helper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <link href="css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <section class="signup-wrapper">
+        <!-- ------------- signup content section ---------- -->
+        <div class="signup-desc">
+          <button class="btn btn-sm btn-pink mt-5 ml-5">Back to Homepage</button>
+          <span class="signup-desc--content">
+            <span
+              >Are you a travel agent<br />
+              looking to grow<br />
+              your network of travelers?</span
+            >
+          </span>
+        </div>
+
+        <!-- ---------- signup form section ----------- -->
+        <div class="signup-form-wrapper">
+          <img
+            src="./asset/img/logo-black.svg"
+            alt="Travel tests global logo"
+            class="img-fluid mx-auto d-block"
+          />
+          <div class="signup-spacing">
+            <form>
+              <div class="form-header">
+                <span class="form-header--heading">Basic Information</span>
+                <span class="form-header--content"
+                  >Kindly fill the information below to proceed:
+                </span>
+              </div>
+              <div class="row mb-4">
+                <div class="col-md-6">
+                  <div>
+                    <label for="first-name">First Name</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="first-name"
+                      placeholder="First Name"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <label for="last-name">Last Name</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="last-name"
+                      placeholder="Last Name"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-md-6">
+                  <label for="phone">Phone Number</label>
+                  <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                      <div class="input-group-text remove-border-right">
+                        +44
+                      </div>
+                    </div>
+                    <input
+                      type="text"
+                      class="form-control remove-border-left"
+                      id="phone"
+                      placeholder="Phone No"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <label for="country">Country of residence</label>
+                    <select class="form-control">
+                      <option value="Make a selection" disabled selected>
+                        Make a selection
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-md-6">
+                  <div>
+                    <label for="email">Email Address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Email"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="password">Password</label>
+                  <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                      <img
+                        src="./asset/img/eye.svg"
+                        class="input-group-text remove-border-right pass-img"
+                        alt="password icon"
+                      />
+                    </div>
+                    <input
+                      type="password"
+                      class="form-control remove-border-left"
+                      id="email"
+                      placeholder="Enter Password"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="form-header">
+                <span class="form-header--heading">Business Information </span>
+                <span class="form-header--content"></span>
+                  Please let us know what name you would like displayed on the
+                  UK Travel Test portal.
+                </span>
+              </div>
+              <div class="row mb-4">
+                <div class="col-md-6">
+                  <div>
+                    <label for="trading-name">Trading Name:</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="first-name"
+                      placeholder="Name of platform"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div>
+                    <label for="organisation">Company name:</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="organisation"
+                      placeholder="Name of organization"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-4">
+                <div class="col-md-6">
+                    <div>
+                      <label for="md">Name of MD:</label>
+                      <input
+                        class="form-control"
+                        type="text"
+                        id="md"
+                        placeholder="Name of MD"
+                      />
+                    </div>
+                  </div>
+                <div class="col-md-6">
+                  <div>
+                    <label for="trading-name">CAC Documents</label>
+                    <div class="file-select">
+                        <div>
+                          <button class="btn btn-sm btn-dark" >Browse</button>
+                        </div>
+                        <span class="file-name">No File</span>
+                      </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row mb-4">
+                <div class="col-md-6">
+                    <div>
+                      <label for="certification">Certification</label>
+                      <select id="certification" class="form-control">
+                          <option value="Are you IATA certified" disabled selected>Are you IATA certified</option>
+                      </select>
+                    </div>
+                  </div>
+              </div>
+              <span class="d-block my-4">
+                If certified <span class="text-pink">
+                  (An IATA number is not a prerequisite to completing your registration and inclusion to the network)
+                </span>
+              </span>
+              <div class="mb-4">
+                <span aria-label="IATA Number" aria-labelledby="iata-number">IATA number</span>
+                <input type="text" class="form-control" id="iata-number" placeholder="Please fill in your IATA Number " />
+              </div>
+              <span >Already have an account? <a href="./login.html" class="text-pink">Login</a></span>
+              <button class="btn btn-pink btn-sm d-block mx-auto my-4 w-100">Register</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"
+  ></script>
+</html>

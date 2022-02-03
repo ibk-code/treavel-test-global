@@ -12,6 +12,8 @@
 @import './pages/covid-test.css';
 @import './pages/cart.css';
 @import './pages/booking.css';
+@import './pages/signup.css';
+@import './pages/login.css';
 
 /* import utils folder */
 @import './utlils/helper.css';
