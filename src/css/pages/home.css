@@ -5,7 +5,7 @@
       rgba(0, 0, 0, 0.3)
     ),
     url('../../asset//img/home-bg.png');
-  height: 700px;
+  height: 750px;
   background-position: center;
   background-size: cover;
 }
@@ -46,16 +46,8 @@ nav {
     font-weight: 800;
     font-size: 4.8rem;
     text-align: center;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    background-size: cover;
+    color: var(--primaryWhite);
     letter-spacing: -0.02em;
-    background-image: linear-gradient(
-      178deg,
-      rgb(227, 39, 100),
-      rgb(2, 133, 224)
-    );
   }
 
   .heading__info {
@@ -452,7 +444,7 @@ footer {
 /* ----------- media query for small screens ----------- */
 @media screen and (max-width: 428px) {
   .home-bg {
-    height: 700px;
+    height: 800px;
   }
 
   .heading-content {
