@@ -136,10 +136,21 @@
   font-size: 0.8rem;
 }
 
+.navbar-brand {
+  margin-right: 0 !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .spacing-wrap {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .spacing-wrap {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 

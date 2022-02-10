@@ -18,7 +18,7 @@ nav {
   color: var(--primaryWhite) !important;
   padding-right: 1.5rem !important;
   padding-left: 1.5rem !important;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 600;
   font-style: normal;
 }
@@ -347,6 +347,11 @@ footer {
     }
   }
 
+  .nav-link {
+    padding-right: 0.8rem !important;
+    padding-left: 0.8rem !important;
+  }
+
   .content-box {
     min-height: 250px;
   }
@@ -356,7 +361,7 @@ footer {
 @media screen and (max-width: 768px) {
   .home-bg {
     height: 600px;
-    width: fit-content;
+    width: auto;
   }
 
   .heading-content {
@@ -374,16 +379,85 @@ footer {
   .uk-travel-content {
     padding-top: 3rem;
   }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .cart-desktop {
+    display: none;
+  }
+
+  .cart-mobile {
+    display: block !important;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 90px;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    left: 0px;
+    padding: 2rem 1rem;
+    z-index: 2;
+    transition: all 0.2s ease 0s;
+
+    ul {
+      width: 100%;
+      display: flex;
+
+      li {
+        .nav-link {
+          color: var(--gray900) !important;
+        }
+      }
+    }
+
+    .nav-link {
+      color: var(--gray900) !important;
+      font-size: 1.2rem;
+    }
+
+    .auth-wrap {
+      flex-direction: column;
+      width: 100%;
+
+      .light-purple {
+        color: var(--primaryPink) !important;
+      }
+    }
+  }
+
+  .navbar-expand-md .navbar-toggler {
+    display: block;
+  }
+
+  .collapse:not(.show) {
+    display: none !important;
+  }
+
+  .show .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-expand-md .navbar-collapse {
+    flex-direction: column;
+  }
+
+  .process-img {
+    height: 150px;
+  }
 }
 
 /* ----------- media query for small screens ----------- */
 @media screen and (max-width: 428px) {
   .home-bg {
-    height: 650px;
+    height: 700px;
   }
 
   .heading-content {
     margin-bottom: 2rem;
+    margin-top: 2rem;
     h1 {
       font-size: 3rem;
     }
@@ -471,8 +545,8 @@ footer {
   }
 
   .navbar-collapse {
-    position: fixed;
-    top: 53px;
+    position: absolute;
+    top: 90px;
     background: rgb(255, 255, 255);
     width: 100%;
     left: 0px;

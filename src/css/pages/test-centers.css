@@ -48,7 +48,9 @@
   .postal-img {
     margin-top: 2rem;
   }
+}
 
+@media screen and (max-width: 428px) {
   .reverse-column {
     flex-direction: column-reverse;
   }
